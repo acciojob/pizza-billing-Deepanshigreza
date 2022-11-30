@@ -15,11 +15,12 @@ public class Pizza {
         // your code goes here
         if(this.isVeg){
             this.price=300;
-            bill=("Base Price Of The Pizza: 300 "+"\n");
+
         }
-        else
-            this.price=400;
-        bill=("Base Price Of The Pizza: 400 "+"\n");
+        else {
+            this.price = 400;
+        }
+        System.out.println("Base Price Of The Pizza:"+this.price);
     }
 
     public int getPrice(){
@@ -31,7 +32,7 @@ public class Pizza {
         // your code goes here
         if(!hs.contains("cheese")){
             this.price+=80;
-            bill+= ("Extra Cheese Added: 80"+ "\n");
+            bill= ("Extra Cheese Added: 80"+ "\n");
             hs.add("cheese");
 
         }
@@ -55,7 +56,7 @@ public class Pizza {
         // your code goes here
         if(!hs.contains("takeaway")){
             this.price+=20;
-            bill+= (" Paper bag added = 20"+"\n");
+            bill+= ("Paper bag added = 20"+"\n");
             hs.add("takeaway");
 
         }
