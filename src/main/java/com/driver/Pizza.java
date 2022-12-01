@@ -50,7 +50,7 @@ public class Pizza {
                 this.price+=120;
             bill+= ("Extra Toppings Added: 120"+"\n");}
         }
-        hs.add("toppings ");
+        hs.add("toppings");
     }
 
     public void addTakeaway(){
