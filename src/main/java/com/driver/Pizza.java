@@ -20,7 +20,7 @@ public class Pizza {
         else {
             this.price = 400;
         }
-        System.out.println("Base Price Of The Pizza:"+this.price);
+        this.bill="Base Price Of The Pizza: "+this.price+"\n";
     }
 
     public int getPrice(){
@@ -32,7 +32,7 @@ public class Pizza {
         // your code goes here
         if(!hs.contains("cheese")){
             this.price+=80;
-            bill= ("Extra Cheese Added: 80"+ "\n");
+            bill+= ("Extra Cheese Added: 80"+"\n");
             hs.add("cheese");
 
         }
@@ -43,11 +43,11 @@ public class Pizza {
         if(!hs.contains("toppings")){
             if(isVeg){
                 this.price+=70;
-                bill+= ("Extra Toppings Added: 70"+ "\n");
+                bill+= ("Extra Toppings Added: 70"+"\n");
             }
             else
                 this.price+=120;
-            bill+= ("Extra Toppings Added: 120"+ "\n");
+            bill+= ("Extra Toppings Added: 120"+"\n");
         }
         hs.add("toppings ");
     }
@@ -56,7 +56,7 @@ public class Pizza {
         // your code goes here
         if(!hs.contains("takeaway")){
             this.price+=20;
-            bill+= ("Paper bag added = 20"+"\n");
+            bill+= ("Paper bag added: 20"+ "\n");
             hs.add("takeaway");
 
         }
@@ -65,7 +65,7 @@ public class Pizza {
     public String getBill(){
         // your code goes here
         if(!hs.contains("GetBill")){
-            bill += ("Total Price: " + this.price + "\n");
+            bill += ("Total Price: " + this.price +"\n");
             hs.add("GetBill");
         }
         return this.bill;
