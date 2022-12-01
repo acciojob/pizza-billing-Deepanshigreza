@@ -18,7 +18,7 @@ public class Pizza {
 
         }
         else {
-            this.price = 400;
+            this.price =400;
         }
         this.bill="Base Price Of The Pizza: "+this.price+"\n";
     }
@@ -33,9 +33,10 @@ public class Pizza {
         if(!hs.contains("cheese")){
             this.price+=80;
             bill+= ("Extra Cheese Added: 80"+"\n");
-            hs.add("cheese");
+
 
         }
+        hs.add("cheese");
     }
 
     public void addExtraToppings(){
@@ -45,9 +46,9 @@ public class Pizza {
                 this.price+=70;
                 bill+= ("Extra Toppings Added: 70"+"\n");
             }
-            else
+            else{
                 this.price+=120;
-            bill+= ("Extra Toppings Added: 120"+"\n");
+            bill+= ("Extra Toppings Added: 120"+"\n");}
         }
         hs.add("toppings ");
     }
@@ -57,16 +58,18 @@ public class Pizza {
         if(!hs.contains("takeaway")){
             this.price+=20;
             bill+= ("Paper bag added: 20"+ "\n");
-            hs.add("takeaway");
+
 
         }
+        hs.add("takeaway");
     }
 
     public String getBill(){
         // your code goes here
         if(!hs.contains("GetBill")){
             bill += ("Total Price: " + this.price +"\n");
-            hs.add("GetBill");
+
         }
+        hs.add("GetBill");
         return this.bill;
     }}
