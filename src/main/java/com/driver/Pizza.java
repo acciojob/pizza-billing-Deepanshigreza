@@ -57,7 +57,7 @@ public class Pizza {
         // your code goes here
         if(!hs.contains("takeaway")){
             this.price+=20;
-            bill+= ("Paper bag added: 20"+ "\n");
+            bill+= ("Paperbag Added: 20"+ "\n");
 
 
         }
